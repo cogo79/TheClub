@@ -2,3 +2,4 @@ node_modules
 public/vendor
 MultiVision.sublime-project
 MultiVision.sublime-workspace
+npm-debug.log
