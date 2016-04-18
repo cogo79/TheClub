@@ -1,7 +1,3 @@
-Setup MySQL:
-https://www.youtube.com/watch?v=q9S51sykd1A
-
-Log in to MySQL on a Mac:
-1) cd /usr/local/mysql/bin
-2) ./mysql -u root -p
+Setup MariaDB:
+https://mariadb.com/kb/en/mariadb/building-mariadb-on-mac-os-x-using-homebrew/
 
