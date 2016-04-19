@@ -1,7 +1,7 @@
 {
-  "name": "multi-vison",
+  "name": "the-club",
   "version": "1.0.0",
-  "description": "Extreme Tech Training",
+  "description": "The Club",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
