@@ -1,3 +1,6 @@
-Setup MariaDB:
+Setup MariaDB with homebrew:
 https://mariadb.com/kb/en/mariadb/building-mariadb-on-mac-os-x-using-homebrew/
 
+Start MariaDB:
+cd /usr/local/Cellar/mariadb/10.1.13/bin
+mysql.server start
