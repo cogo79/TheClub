@@ -1,7 +1,6 @@
 var express = require('express'),
 	logger = require('morgan'),
-	bodyParser = require('body-parser'),
-	db = require('./models/index');
+	bodyParser = require('body-parser');
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
