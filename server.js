@@ -2,6 +2,8 @@ var express = require('express'),
 	logger = require('morgan'),
 	bodyParser = require('body-parser');
 
+var session = require('express-session');
+
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var app = express();
@@ -13,6 +15,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(session({secret: 'Welcome to The Club!', resave:false, saveUninitialized:false}));
+require('./server/authentication/passport')(app);
 
 require('./server/routes/index')(app);
 

@@ -1,4 +1,8 @@
-angular.module('app', ['ngResource', 'ngRoute']);
+"use strict";
+
+angular.module('app', ['ngResource', 'ngRoute','app.controllers',
+  'app.services',
+  'appConfig']);
 
 angular.module('app').config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
@@ -7,8 +11,3 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		controller: 'mainCtrl'
 	});
 });
-
-angular.module('app').controller('mainCtrl',['$scope', function($scope) {
-	$scope.myVar = "Hello Angular";
-}]);
-
